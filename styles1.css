@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root
+
+html{
+    scroll-behavior: smooth;
+}
+  
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: #000505;
+    color: #D7FFFF;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.start{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    gap: 12px;
+    padding: 50px;
+    height: fit-content;
+    width: fit-content;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 14px );
+    -webkit-backdrop-filter: blur( 14px );
+    border-radius: 30px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.start1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: fit-content;
+}
+
+.start1 h1,.start1 h2 {
+    font-size: 60px;
+    color: #003D3D;
+}
+
+.start .btn {
+    padding: 10px 20px;
+    background-color: #58FEFE;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+
+}
+  
+.btn:hover {
+    background-color: #003D3D;
+}
