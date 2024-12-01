@@ -13,7 +13,7 @@ const heroData = {
   heading: "John Aldrin Anthony Portento",
   subheading: "Frontend Developer",
   description:
-    "I'm a passionate frontend developer dedicated to crafting visually appealing and user-friendly web experiences.",
+    "I’m a passionate frontend developer committed to creating visually stunning and user-centric web experiences that seamlessly blend design and functionality.",
   imgSrc: "images/pic2.png",
   imgAlt: "Hero Image",
   buttonText: "Explore More",
@@ -24,11 +24,15 @@ const aboutData = {
   title: "About Me",
   name: "John Aldrin Anthony R Portento",
   description:
-    "Hello, my name is John Aldrin Anthony R Portento, and I am a college student now pursuing a Bachelor of Science in Information Technology at Marinduque State University. Outside of class, I enjoy playing online games, watching movies, playing badminton, and travelling. I'm studying hard to be successful in the future, and I'm always looking for new ways to learn and grow both academically and personally. I am from the island of Mongpong, Santa Cruz, Marinduque.",
-  subDescription: "Your Future Frontend Developer",
+    "Hi, I'm John Aldrin Anthony R. Portento, a dedicated college student currently pursuing a Bachelor of Science in Information Technology at Marinduque State University. Beyond academics, I enjoy playing online games, watching movies, playing badminton, and exploring new places through travel. Hailing from the serene island of Mongpong, Santa Cruz, Marinduque, I am deeply motivated to achieve success and constantly seek opportunities to grow academically and personally.",
+  subDescription: "With a passion for learning and a drive to excel, I am on my way to becoming your future Frontend Developer!",
   imgSrc: "images/pic3.png",
   imgAlt: "About Me",
   map: "images/map.png",
+  flt1: "Passionate Learner",
+  flt2: "Dedicated",
+  flt3: "Motivated",
+  flt4: "Curious and Adventurous",
   buttonText: "Show Skills",
 };
 
@@ -36,12 +40,12 @@ const aboutData = {
 const skillsData = {
   title: "My Skills",
   description:
-    "This are my expertise in different kinds of programming languages along my journey.",
+    "My skills showcase my expertise in a variety of programming languages that I've learned and honed throughout my journey. Each step of my learning experience has allowed me to build a strong foundation and expand my capabilities in web and software development.",
   skills: [
-    { name: "HTML", imgSrc: "images/html.png", imgAlt: "HTML Logo",   skilldes: "Started my journey in learning HTML back in 2nd year college"    },
-    { name: "CSS", imgSrc: "images/css.png", imgAlt: "CSS Logo", skilldes: "Started also using this way back in 2nd year college" },
-    { name: "JavaScript", imgSrc: "images/js.png", imgAlt: "JavaScript Logo", skilldes: "I started using this in 2nd semester when I was in 2nd year college" },
-    { name: "Python", imgSrc: "images/pyt.png", imgAlt: "Python Logo", skilldes: "I started using this when I'm in 1st year college" },
+    { name: "HTML", imgSrc: "images/lang1.png", imgAlt: "HTML Logo",   skilldes: "I began my journey into web development by learning HTML during my second year of college, which sparked my interest in creating and designing websites."    },
+    { name: "CSS", imgSrc: "images/lang3.png", imgAlt: "CSS Logo", skilldes: "I started using CSS back in my second year of college, enhancing my ability to style and design visually appealing websites." },
+    { name: "JavaScript", imgSrc: "images/lang2.png", imgAlt: "JavaScript Logo", skilldes: "I began using JavaScript during the second semester of my second year in college, unlocking the power to make websites interactive and dynamic." },
+    { name: "Python", imgSrc: "images/lang4.png", imgAlt: "Python Logo", skilldes: "I started using Python during my first year of college, discovering its versatility and power for solving problems and building projects." },
   ],
   buttonText: "Show Projects",
 
@@ -50,7 +54,7 @@ const skillsData = {
 // Data for the Projects Section
 const projectsData = {
   title: "My Projects",
-  description: "Here are some of the projects I've worked on throughout my journey.",
+  description: "Throughout my journey, I’ve had the opportunity to work on a variety of projects that showcase my skills and growth as a developer. Each project represents my dedication to creating functional, visually appealing, and user-friendly web experiences.",
   projects: [
     {
       name: "PCC Alab Carabaoan",
@@ -115,20 +119,21 @@ const projectsData = {
 // Data for the Contacts Section
 const contactsData = {
   title: "Contact Me",
-  description: "I'd love to hear from you! Here's how you can reach me:",
-  email: "john.doe@example.com",
-  phone: "+123 456 7890",
-  address: "123 Developer Lane, Code City, Programming Country",
+  description: "Got a project in mind, need help with tech, or just want to chat? Reach out, and let's build something incredible together!",
+  email: "JohnAnthony4102@gmail.com",
+  phone: "+63907 991 3274",
+  address: "Brgy. Mongpong Sta. Cruz Marinduque",
 };
 
 // Footer Data
 const footerData = {
-  text: "© 2024 John Anthony. All Rights Reserved.",
+  text: "© 2024 John Aldrin Anthony Portento | All Rights Reserved.",
   links: [
-    { name: "GitHub", href: "https://github.com/john-anthony" },
-    { name: "LinkedIn", href: "https://linkedin.com/in/john-anthony" },
-    { name: "Twitter", href: "https://twitter.com/john_anthony" },
-  ],
+    { name: "GitHub", href: "https://github.com/aldrinxaldrin", icon: "fa-github" },
+    { name: "Facebook", href: "https://www.facebook.com/ynohtnaaldrin.john?mibextid=ZbWKwL", icon: "fa-facebook-f" },
+    { name: "Twitter", href: "https://x.com/jan_AANTH0NY?t=2wqm1wwa_JMr1yBmyR32ZQ&s=09", icon: "fa-twitter" },
+    { name: "Instagram", href: "https://www.instagram.com/j_anthony4102/profilecard/?igsh=MW5zdzNkd3Z6Y2htbg==", icon: "fa-instagram" },
+  ]
 };
 
 
@@ -170,7 +175,7 @@ document.getElementById("plain-btn").addEventListener("click", function () {
                 </div>
                 <img id="hero-image" src="${heroData.imgSrc}" alt="${heroData.imgAlt}" />
             </div>
-            <button id="explore-btn" class="btn"><a id="btnName" href="#about-section1">${heroData.buttonText}</button>
+            <button id="explore-btn" class="btn"><a id="btnName1" href="#about-section1">${heroData.buttonText}</button>
         </div>
     </div>
   `;
@@ -248,11 +253,42 @@ document.getElementById("plain-btn").addEventListener("click", function () {
               <img id="about-image" src="${aboutData.imgSrc}" alt="${aboutData.imgAlt}" />
               <button id="skill-btn" class="btn"><a id="btnName" href="#skills-section1">${aboutData.buttonText}</button>
             </div>
+            <div class="float">
+              <p id="flt1">${aboutData.flt1}</p>
+              <p id="flt2">${aboutData.flt2}</p>
+              <p id="flt3">${aboutData.flt3}</p>
+              <p id="flt4">${aboutData.flt4}</p>
+              <p id="flt5"></p>
+              <p id="flt6"></p>
+              <p id="flt7"></p>
+              <p id="flt8"></p>
+              <p id="flt9"></p>
+              <p id="flt10"></p>
+            </div>
           </div>
         </section>
       </div>
     `;
     document.body.appendChild(aboutSection);
+
+    document.getElementById("about-section1").addEventListener("mousemove", (event) => {
+      // Create a new glowing element
+      const glow = document.createElement("div");
+      glow.className = "pointer-glow";
+      glow.style.left = `${event.clientX}px`;
+      glow.style.top = `${event.clientY}px`;
+    
+      // Append the glow to the section
+      const section = document.getElementById("about-section1");
+      section.appendChild(glow);
+    
+      // Remove the glow after the fade-out animation
+      setTimeout(() => {
+        glow.remove();
+      }, 1000); // Matches the duration of the fadeOut animation
+    });
+    
+    
 
     // Smooth scroll to the about Section
     aboutSection.scrollIntoView({ behavior: "smooth" });
@@ -268,22 +304,30 @@ document.getElementById("plain-btn").addEventListener("click", function () {
       skillSection.id = "skills-section";
 
       skillSection.innerHTML = `
-        <h1>${skillsData.title}</h1>
-        <p>${skillsData.description}</p>
-        <div class="skills" id="skills-section1">
-          ${skillsData.skills
-            .map(
-              (skill) =>
-                `<div class="skills1">
-                  <img src="${skill.imgSrc}" alt="${skill.imgAlt}" class="skill-icon" />
-                  <h3>${skill.name}</h3>
-                  <p>${skill.skilldes}
-                </div>`
+        <div class="skills-container" id="skills-section1">
+          <div class="skills-content">
+            <h1>${skillsData.title}</h1>
+            <p>${skillsData.description}</p>
+          </div>
+          <div class="skills">
+            ${skillsData.skills
+              .map(
+                (skill) =>
+                  `<div class="skills1">
+                    <div class="skill-icon" > 
+                      <img src="${skill.imgSrc}" alt="${skill.imgAlt}" /> 
+                    </div>
+                    <div class="skills2">
+                      <h3>${skill.name}</h3>
+                      <p>${skill.skilldes}
+                    </div>
+                  </div>`
 
-            )
-            .join("")}
+              )
+              .join("")}
+          </div>
+          <button id="project-btn" class="btn"><a id="btnName" href="#projects-section1">${skillsData.buttonText}</button>
         </div>
-        <button id="project-btn" class="btn"><a id="btnName" href="#projects-section1">${skillsData.buttonText}</button>
 
       `;
       document.body.appendChild(skillSection);
@@ -302,9 +346,12 @@ document.getElementById("plain-btn").addEventListener("click", function () {
         projectSection.id = "projects-section";
 
         projectSection.innerHTML = `
-          <h1>${projectsData.title}</h1>
-          <p>${projectsData.description}</p>
-          <div class="projects" id="projects-section1">
+          <div class="projects-container" id="projects-section1">
+            <div class="projects-content">
+              <h1>${projectsData.title}</h1>
+              <p>${projectsData.description}</p>
+           </div>
+          <div class="projects">
             ${projectsData.projects
               .map(
                 (project) =>
@@ -334,43 +381,57 @@ document.getElementById("plain-btn").addEventListener("click", function () {
           contactSection.id = "contacts-section";
 
           contactSection.innerHTML = `
-            <h1>${contactsData.title}</h1>
+          <div class="contact-info" id="contacts-section1">
+            <h2>${contactsData.title}</h2>
             <p>${contactsData.description}</p>
-            <div class="contact-info" id="contacts-section1">
-              <p><strong>Email:</strong> ${contactsData.email}</p>
-              <p><strong>Phone:</strong> ${contactsData.phone}</p>
-              <p><strong>Address:</strong> ${contactsData.address}</p>
-            </div>
-          `;  
-          document.body.appendChild(contactSection);
-//jjhhh
-          // Smooth scroll to the contact Section
-          contactSection.scrollIntoView({ behavior: "smooth" });
+            <p><strong>Address:</strong> ${contactsData.address}</p>
+            <p><strong>Phone:</strong> ${contactsData.phone}</p>
+            <p><strong>E-mail:</strong> ${contactsData.email}</p>
+          </div>
+          <div class="contact-form">
+            <form id="contact-form">
+              <input type="text" id="name" name="name" placeholder="Name" required>
+              <textarea id="message" name="message" placeholder="Enter Message..." required></textarea>
+              <button type="submit">Message</button>
+            </form>
+          </div>
+        `;
+        document.body.appendChild(contactSection);
 
-          contactBtn.removeEventListener("click", handleContactClick);
+        // Smooth scroll to the contact section
+        contactSection.scrollIntoView({ behavior: "smooth" });
 
-          // Add Footer after the Contact Section
-          const footer = document.createElement("footer");
-          footer.className = "footer-section";
-          footer.innerHTML = `
-            <div class="footer-content">
-              <p>${footerData.text}</p>
-              <ul>
-                ${footerData.links
-                  .map(
-                    (link) =>
-                      `<li><a href="${link.href}" target="_blank">${link.name}</a></li>`
-                  )
-                  .join("")}
-              </ul>
-            </div>
-          `;
-          document.body.appendChild(footer);
-        });
+        // Remove event listener to prevent multiple contact sections being added
+        contactBtn.removeEventListener("click", handleContactClick);
+
+          // Footer Section
+        const footer = document.createElement("footer");
+        footer.className = "footer-section";
+        footer.innerHTML = `
+        <div class="footer-content">
+          <p>${footerData.text}</p>
+          <ul class="social-links">
+            ${footerData.links
+              .map(
+                (link) =>
+                  `<li><a href="${link.href}" target="_blank"><i class="fab ${link.icon}"></i> ${link.name}</a></li>`
+              )
+              .join("")}
+          </ul>
+          <ul>
+            ${navLinks
+              .map(
+                (link) =>
+                  `<li><a href="${link.href}"><i class="fas ${link.icon}"></i> ${link.name}</a></li>`
+              )
+              .join("")}
+          </ul>
+        </div>
+      `;        document.body.appendChild(footer);
       });
     });
   });
-
+});        
   // Disable the "Fix Page" button to ensure it runs only once
   this.disabled = true;
 });
