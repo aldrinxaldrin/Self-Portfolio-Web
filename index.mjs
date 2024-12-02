@@ -58,56 +58,56 @@ const projectsData = {
   projects: [
     {
       name: "PCC Alab Carabaoan",
-      imgSrc: "images/pcc.png", // Replace with actual image paths
+      imgSrc: "images/pcc.png",
       imgAlt: "Project 1 Image",
-      link: "#project1", // Replace with actual project links
+      link: "#project1", 
       projdes: "Integrative Programming Final project during my 2nd Year using php html Css and JavaScript.                 ",
     },
     {
       name: "World Hardest Game Semi 3D",
-      imgSrc: "images/game.png", // Replace with actual image paths
+      imgSrc: "images/game.png", 
       imgAlt: "Project 2 Image",
-      link: "#project2", // Replace with actual project links
+      link: "#project2", 
       projdes: "We recreated the world's hardest game, The Snubby Land, adding a semi-3D twist. This was made using Unity.",
     },
     {
       name: "MNHS Portal",
-      imgSrc: "images/mnhsPortal.png", // Replace with actual image paths
+      imgSrc: "images/mnhsPortal.png", 
       imgAlt: "Project 3 Image",
-      link: "#project3", // Replace with actual project links
+      link: "#project3", 
       projdes: "This was my Mobile App Development activity during my second year. It features a responsive layout.",
 
     },
 
     {
       name: "MNHS Admin UI",
-      imgSrc: "images/mnhsAdmin.png", // Replace with actual image paths
+      imgSrc: "images/mnhsAdmin.png", 
       imgAlt: "Project 4 Image",
-      link: "#project4", // Replace with actual project links
+      link: "#project4", 
       projdes: "This was my Final Project in HCI during my second year. It is the main layout of the admin, and it can be accessed using mockplus",
 
     },
     {
       name: "MNHS Student UI",
-      imgSrc: "images/mnhsStudent.png", // Replace with actual image paths
+      imgSrc: "images/mnhsStudent.png", 
       imgAlt: "Project 5 Image",
-      link: "#project5", // Replace with actual project links
+      link: "#project5", 
       projdes: "This was my Final Project in HCI during my second year. It is the main layout of the user or student, and it can be accessed using mockplus",
 
     },
     {
       name: "Lab 5",
-      imgSrc: "images/proj1.png", // Replace with actual image paths
+      imgSrc: "images/proj1.png", 
       imgAlt: "Project 6 Image",
-      link: "#project6", // Replace with actual project links
+      link: "#project6", 
       projdes: "This was my Web Prog Activity. Efficient HTML and CSS code, including proper use of tags, classes, and IDs.",
 
     },
     {
       name: "Lab 6",
-      imgSrc: "images/proj2.png", // Replace with actual image paths
+      imgSrc: "images/proj2.png",
       imgAlt: "Project 7 Image",
-      link: "#project7", // Replace with actual project links
+      link: "#project7", 
       projdes: "This was my Web Prog Activity. It features a responsive flexbox layout. Allows us to be efficient in HTML and CSS code",
 
     },
@@ -182,9 +182,9 @@ document.getElementById("plain-btn").addEventListener("click", function () {
   document.body.appendChild(heroSection);
   const heroHeading = `${heroData.heading}`;
   const heroSubheading = `${heroData.subheading}`;
-  const typingSpeed = 100; // Speed of typing (ms per character)
-  const deletingSpeed = 50; // Speed of deleting (ms per character)
-  const delayBetween = 1000; // Delay before retyping starts (ms)
+  const typingSpeed = 100; 
+  const deletingSpeed = 50; 
+  const delayBetween = 1000; 
 
   function typeAndDeleteText(elementId, texts, textIndex = 0, charIndex = 0, isDeleting = false) {
     const element = document.getElementById(elementId);
@@ -199,7 +199,7 @@ document.getElementById("plain-btn").addEventListener("click", function () {
 
       if (charIndex === 0) {
         isDeleting = false;
-        textIndex = (textIndex + 1) % texts.length; // Move to the next text or loop back
+        textIndex = (textIndex + 1) % texts.length; 
         setTimeout(() => typeAndDeleteText(elementId, texts, textIndex, charIndex, isDeleting), delayBetween);
         return;
       }
@@ -285,7 +285,7 @@ document.getElementById("plain-btn").addEventListener("click", function () {
       // Remove the glow after the fade-out animation
       setTimeout(() => {
         glow.remove();
-      }, 1000); // Matches the duration of the fadeOut animation
+      }, 1000); 
     });
     
     
